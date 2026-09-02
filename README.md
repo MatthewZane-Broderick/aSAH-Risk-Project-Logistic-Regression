@@ -34,3 +34,6 @@ Imaging grade proxy: if not available, use surrogates (e.g., EVD placement, earl
 Labs (first 24h): WBC, CRP (if available), neutrophil/lymphocyte counts → compute NLR, platelet count → PLR, creatinine, sodium.
 
 Comorbidities: hypertension, diabetes, smoking status (if available).
+
+daily commit 2: 
+because of acess to Suwa dataset is available instead of predicting DCI, instead a poor functional outcomes will be predicted
