@@ -37,3 +37,28 @@ Comorbidities: hypertension, diabetes, smoking status (if available).
 
 daily commit 2: 
 because of acess to Suwa dataset is available instead of predicting DCI, instead a poor functional outcomes will be predicted
+
+daily commit 3: 
+for project the main 8 features will be 8 clinically relevant features for aSAH outcomes: 
+
+Age
+
+WFNS grade
+
+Fisher CT grade
+
+Aneurysm size (mm)
+
+Neutrophil–lymphocyte ratio (NLR)
+
+Albumin (g/dL)
+
+Mean temporal muscle thickness (TMT_mean, mm)
+
+Systolic blood pressure on admission (SBP, mmHg)
+
+Other varibales have been associated with aSAH such as ADPKD
+
+
+
+“Missing values in numerical predictors (SBP, TMT, NLR, albumin, aneurysm size) were median‑imputed using training‑set values. Missingness per feature ranged from X% to Y% and is reported as a limitation.”
