@@ -1,6 +1,6 @@
 import pandas as pd
 import numpy as np
-from sklearn.preprocessing import StandardScaler, OneHotEncoder
+from sklearn.preprocessing import StandardScaler
 from sklearn.compose import ColumnTransformer
 from sklearn.pipeline import Pipeline
 from sklearn.impute import SimpleImputer
@@ -27,18 +27,23 @@ def load_data(path: str):
         print(missing_values[missing_values > 0])
     return df
 
-def build_preprocessor():
 
-    num_pipe = Pipeline([
-        ('imputer', SimpleImputer(strategy='median')),
-       # ('scaler', StandardScaler()) deciding whether my model will be tree dependent or linear regression, most likely linear regression.
-    ])
+def build_preprocessor(scale_for_logistic: bool = True):
+    steps = [
+        ('imputer', SimpleImputer(strategy='median'))
+    ]
+
+    if scale_for_logistic:
+        steps.append(('scaler', StandardScaler()))
+
+    num_pipe = Pipeline(steps)
 
     preprocessor = ColumnTransformer([
         ('num', num_pipe, num_features)
     ], remainder='drop')
 
     return preprocessor
+
 
 def load_and_split_data(path:str, target_col: str = "poor_outcome_6m",
                         test_size: float = 0.2, random_state: int = 42):
