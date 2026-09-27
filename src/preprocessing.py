@@ -18,6 +18,7 @@ num_features =[
     'aneurysm_size_mm'
     ]
 
+TARGET = 'poor_outcome_6m'
 def load_data(path: str):
     df = pd.read_csv(path)
 
@@ -45,7 +46,7 @@ def build_preprocessor(scale_for_logistic: bool = True):
     return preprocessor
 
 
-def load_and_split_data(path:str, target_col: str = "poor_outcome_6m",
+def load_and_split_data(path:str, target_col: str = TARGET,
                         test_size: float = 0.2, random_state: int = 42):
     df = load_data(path)
 
