@@ -1,16 +1,15 @@
 # aSAH‑Risk Project
-an end‑to‑end, explainable ML pipeline for predicting a clinically meaningful aSAH outcome (e.g., DCI or poor functional outcome) plus a Streamlit CDSS demo.
+an end‑to‑end, explainable ML pipeline for predicting a clinically meaningful aSAH outcome with a Tkinter demo.
 
 
 Title:
-aSAH‑Risk: An explainable machine‑learning clinical decision support tool for predicting delayed cerebral ischaemia (DCI) after aneurysmal subarachnoid haemorrhage
+aSAH‑Risk: An explainable machine‑learning clinical decision support tool for predicting 6 month poor outcome after aneurysmal subarachnoid haemorrhage
 
-Can an interpretable ML model, using admission clinical variables and routine labs, accurately predict which aSAH patients will develop DCI, and can this be wrapped in a simple CDSS prototype to support early risk stratification?
+Can an interpretable ML model, using admission clinical variables and routine labs, accurately predict which aSAH patients will develop poor outcomes within 6 months, and can this be wrapped in a simple prototype to support early risk stratification?
 
 DCI is a leading cause of secondary injury and poor outcome after aSAH.
 
 Many recent ML papers already model DCI using clinical + inflammatory markers, so you can benchmark against published performance (AUROC ~0.80–0.90).
-
 
 Cohort definition:
 
