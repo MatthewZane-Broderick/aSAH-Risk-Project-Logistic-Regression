@@ -1,0 +1,73 @@
+# Python cache and compiled files
+__pycache__/
+*.py[cod]
+*.pyo
+*.pyd
+
+# Virtual environments
+.venv/
+venv/
+env/
+ENV/
+
+# Environment variables and secrets
+.env
+.env.*
+!.env.example
+*.pem
+*.key
+secrets/
+credentials/
+
+# Jupyter
+.ipynb_checkpoints/
+*.ipynb_checkpoints
+
+# Data files
+data/
+data/
+data/
+*.csv
+*.xlsx
+*.xls
+*.sav
+*.dta
+*.parquet
+*.feather
+*.pkl
+*.pickle
+
+# Generated model artifacts
+models/
+*.joblib
+*.pkl
+*.pickle
+
+# Generated results and temporary outputs
+outputs/
+results/
+reports/generated/
+figures/generated/
+*.log
+*.tmp
+
+# Operating-system files
+.DS_Store
+Thumbs.db
+
+# IDE settings
+.vscode/
+.idea/
+
+# Build and packaging files
+dist/
+build/
+*.egg-info/
+
+# Coverage and test files
+.coverage
+htmlcov/
+.pytest_cache/
+
+# Local configuration
+config.local.*
